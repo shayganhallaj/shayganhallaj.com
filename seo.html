@@ -841,7 +841,12 @@
                     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
                         .header-blur-background {}
                     }
-                </style>
+                    @media screen and (max-width:767px){
+            .header .header-title--use-mobile-logo .header-mobile-logo img {
+        max-height: 45px;
+    }
+     }
+</style>
                 <div class="header-border" data-header-style="dynamic" data-header-usability-enabled="true" data-header-border="false" data-test="header-border" style="
 
 
