@@ -578,6 +578,11 @@
           h1, h2, h3, h4, h5, h6, p, span {
     font-family: 'Roboto' !important;
 }
+       @media screen and (max-width:767px){
+            .header .header-title--use-mobile-logo .header-mobile-logo img {
+        max-height: 45px;
+    }
+       }
 
     </style>
 </head>
@@ -842,6 +847,9 @@
                     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
                         .header-blur-background {}
                     }
+                    section.page-section.full-bleed-section.layout-engine-section.background-width--full-bleed.section-height--medium.content-width--wide.horizontal-alignment--center.vertical-alignment--middle.light {
+    display: none !important;
+}
                 </style>
                 <div class="header-border" data-header-style="dynamic" data-header-usability-enabled="true" data-header-border="false" data-test="header-border" style="
 
@@ -1475,7 +1483,7 @@
 
 
                                     <div class="container header-menu-nav-item header-menu-nav-item--collection">
-                                        <a href="/research">
+                                        <a href="research">
                                             <div class="header-menu-nav-item-content">
                                                 Research
                                             </div>
